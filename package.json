@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"node ./tasks/build.js"
+    "build": "node ./tasks/build.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/zhou-yg/pixi-lib/issues"
   },
-  "homepage": "https://github.com/zhou-yg/pixi-lib#readme"
+  "homepage": "https://github.com/zhou-yg/pixi-lib#readme",
+  "dependencies": {
+    "lodash": "^4.2.0"
+  }
 }
