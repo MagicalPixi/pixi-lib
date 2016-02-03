@@ -1,5 +1,1 @@
-module.exports = {
-  getIm: require("./lib/getIm.js"),
-  getMc: require("./lib/getMc.js"),
-  setConfig: require("./lib/setConfig.js"),
-}
+module.exports = {createLoad:require("./lib/createLoad.js"),getIm:require("./lib/getIm.js"),getMc:require("./lib/getMc.js"),setConfig:require("./lib/setConfig.js"),}
