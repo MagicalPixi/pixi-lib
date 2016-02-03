@@ -1,1 +1,1 @@
-module.exports = {createLoad:require("./lib/createLoad.js"),getIm:require("./lib/getIm.js"),getMc:require("./lib/getMc.js"),setConfig:require("./lib/setConfig.js"),}
+module.exports = {createLoad:require("./lib/createLoad.js"),distance:require("./lib/distance.js"),getIm:require("./lib/getIm.js"),getMc:require("./lib/getMc.js"),isSupportWebGL:require("./lib/isSupportWebGL.js"),makeIdentity:require("./lib/makeIdentity.js"),setConfig:require("./lib/setConfig.js"),}
