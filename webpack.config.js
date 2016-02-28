@@ -11,7 +11,8 @@ module.exports = {
     bundle:['./index.js','./test/index.js']
   },
   output:{
-    path:path.resolve(__dirname,'dist'),
+    path:path.resolve(__dirname,'./dist'),
+    publicPath:'dist',
     filename:'bundle.js'
   }
 };
