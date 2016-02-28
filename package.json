@@ -4,7 +4,7 @@
   "description": "pixi tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "webpack-dev-server --content-base ./ --hot --inline --progress --port 3949",
     "build": "node ./tasks/build.js"
   },
   "repository": {
@@ -24,5 +24,10 @@
   "dependencies": {
     "lodash": "^4.2.0",
     "pubsub-js": "^1.5.3"
+  },
+  "devDependencies": {
+    "pixi.js": "^3.0.9",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }
