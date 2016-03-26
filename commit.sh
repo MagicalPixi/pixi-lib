@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 message=$*
 
 npm run build
