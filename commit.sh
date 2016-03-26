@@ -1,4 +1,4 @@
-message=$1
+message=$*
 
 npm run build
 
