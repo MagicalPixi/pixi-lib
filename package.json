@@ -1,11 +1,12 @@
 {
   "name": "pixi-lib",
-  "version": "1.12.18",
+  "version": "1.13.0",
   "description": "pixi tools",
   "main": "index.js",
   "scripts": {
     "test": "webpack-dev-server --content-base ./ --hot --inline --progress --port 3949",
-    "build": "node ./tasks/build.js"
+    "build": "node ./tasks/build.js",
+    "buildDist":"webpack --config webpack.config.pro.js"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,4 @@
-npm run build
+#!/usr/bin/env bash
+sh ./commit.sh fix
 
-git commit -a -m 'fix'
-
-npm publish
-
-git push
+sh ./publish.sh
