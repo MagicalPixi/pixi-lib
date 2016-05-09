@@ -17,9 +17,11 @@ var indexJS = fs.readdirSync(path.resolve(__dirname,libPath)).map(function (js) 
 
   return init + next.key + ':require("' + next.path + '"),'
 
-},'module.exports = {');
+},'');
 
-indexJS += '}';
+indexJS = 'var pixiLib = {' + indexJS + '};';
+
+indexJS += 'module.exports= pixiLib;window.pixiLib=pixiLib;';
 
 
 fs.writeFile(indexJSFile,indexJS);
