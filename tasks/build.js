@@ -18,7 +18,7 @@ function buildObj(p) {
   }).map(function (js) {
     return {
       key: js.replace('.js', ''),
-      path: path.join('.',p,js)
+      path: './'+path.join('./',p,js)
     }
   }).reduce(function (init, next) {
 
@@ -34,9 +34,9 @@ var utilsJs = buildObj(libUtilsPath)
 
 utilsJs = ` utils:{${utilsJs}},`
 
-indexJs = 'var pixiLib = {' + indexJs + utilsJs + '}'
+indexJs = 'var pixiLib = {' + indexJs + utilsJs + '};'
 
-indexJs += 'module.exports= pixiLib;window.pixiLib=pixiLib'
+indexJs += 'window.pixiLib=pixiLib;module.exports= pixiLib;'
 
 
 fs.writeFile(indexJsFile,indexJs)
