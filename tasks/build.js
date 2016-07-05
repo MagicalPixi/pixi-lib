@@ -36,7 +36,7 @@ utilsJs = ` utils:{${utilsJs}},`
 
 indexJs = 'var pixiLib = {' + indexJs + utilsJs + '}'
 
-indexJs += 'module.exports= pixiLibwindow.pixiLib=pixiLib'
+indexJs += 'module.exports= pixiLib;window.pixiLib=pixiLib'
 
 
 fs.writeFile(indexJsFile,indexJs)
