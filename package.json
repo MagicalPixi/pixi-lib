@@ -1,10 +1,10 @@
 {
   "name": "pixi-lib",
-  "version": "1.16.6",
+  "version": "1.17.0",
   "description": "pixi tools",
   "main": "index.js",
   "scripts": {
-    "test": "webpack-dev-server --content-base ./ --hot --inline --progress --port 3949",
+    "start": "webpack-dev-server --content-base ./ --hot --inline --progress --port 9000",
     "build": "node ./tasks/build.js",
     "buildDist":"webpack --config webpack.config.pro.js"
   },
