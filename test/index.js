@@ -1,15 +1,16 @@
 var body = document.querySelector('body')
 
 
-var loading = pixiLib.utils.basicLoading()
+var m = pixiLib.utils.mpLoading()
 
-body.appendChild(loading.el())
+body.appendChild(m.el())
 
 var i = 0;
 
 
 setInterval(function(){
 
-  loading.load(i++)
+  m.progress(i++)
 
 },100)
+window.m = m;
