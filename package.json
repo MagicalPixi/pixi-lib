@@ -1,6 +1,6 @@
 {
   "name": "pixi-lib",
-  "version": "1.20.3",
+  "version": "1.20.4",
   "description": "pixi tools",
   "main": "index.js",
   "scripts": {

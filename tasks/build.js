@@ -36,7 +36,12 @@ utilsJs = ` utils:{${utilsJs}},`
 
 indexJs = 'var pixiLib = {' + indexJs + utilsJs + '};'
 
-indexJs += 'window.pixiLib=pixiLib;module.exports= pixiLib;'
+indexJs += 'if( typeof window !== "undefined" ){ \n' +
+  'window.pixiLib=pixiLib; \n' +
+  '} \n' +
+  'if(typeof module !== "undefined" ){  \n' +
+   'module.exports= pixiLib; \n' +
+  '}'
 
 
 fs.writeFile(indexJsFile,indexJs)
