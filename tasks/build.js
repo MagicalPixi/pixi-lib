@@ -6,6 +6,7 @@ var fs = require('fs')
 
 var libPath = 'lib'
 var libUtilsPath = 'lib/utils'
+var audioPath = 'lib/audio'
 
 var indexJsFile = 'index.js'
 
@@ -31,10 +32,12 @@ function buildObj(p) {
 
 var indexJs = buildObj(libPath)
 var utilsJs = buildObj(libUtilsPath)
+var audioJs = buildObj(audioPath)
 
-utilsJs = ` utils:{${utilsJs}},`
+utilsJs = `utils:{${utilsJs}},`;
+audioJs = `audio:{${audioJs}},`;
 
-indexJs = 'var pixiLib = {' + indexJs + utilsJs + '};'
+indexJs = 'var pixiLib = {' + indexJs + utilsJs + audioJs + '};'
 
 indexJs += 'if( typeof window !== "undefined" ){ \n' +
   'window.pixiLib=pixiLib; \n' +
