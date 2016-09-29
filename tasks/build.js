@@ -38,7 +38,7 @@ var loadingJs = buildObj(loadingPath)
 
 utilsJs = `utils:{${utilsJs}},`;
 audioJs = `audio:{${audioJs}},`;
-loadingJs = `loading:{${loadingJs},`;
+loadingJs = `loading:{${loadingJs}},`;
 
 indexJs = 'var pixiLib = {' + indexJs + utilsJs + audioJs + loadingJs + '};'
 
